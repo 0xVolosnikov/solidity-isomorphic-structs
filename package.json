@@ -1,11 +1,15 @@
 {
   "name": "solidity-isomorphic-structs",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tool for generation of isomorphic structs in Solidity",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT"
+  "author": "Vladislav Volosnikov <Vladyan18@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vladyan18/solidity-isomorphic-structs.git"
+  }
 }
