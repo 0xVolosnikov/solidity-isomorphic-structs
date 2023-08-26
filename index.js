@@ -11,7 +11,7 @@ function createIsomorphicStructure(name, fields) {
     file = baseTemplate
     .replaceAll('${NAME}', name)
     .replace('${STRUCT}', buildStructure(name, fields))
-    .replace('\n${LIBRARY_PACKED_GETTERS}', indent(buildPackedGetters(name, fields)))
+    .replace('${LIBRARY_PACKED_GETTERS}', indent(buildPackedGetters(name, fields)))
     .replace('\n${LIBRARY_PACKED_SETTERS}', '\n\n' + indent(buildPackedSetters(name, fields)))
     return file;
 }

@@ -28,7 +28,8 @@ library TestLibrary {
   }
 }
 
-library TestPackedLibrary {  uint256 private constant UINT128_MASK = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+library TestPackedLibrary {
+  uint256 private constant UINT128_MASK = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
   uint256 private constant UINT64_MASK = 0xFFFFFFFFFFFFFFFF;
 
   uint256 private constant B_OFFSET = 128;

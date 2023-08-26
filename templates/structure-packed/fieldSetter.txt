@@ -1,0 +1,5 @@
+function set${FIELD_NAME_CAMEL_CASE}(${NAME}Packed _packed, ${FIELD_TYPE} _${FIELD_NAME}) internal pure returns(${NAME}Packed _result) {
+    assembly {
+        ${LOAD_LOGIC}
+    }
+}

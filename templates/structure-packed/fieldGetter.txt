@@ -1,0 +1,5 @@
+function ${FIELD_NAME}(${NAME}Packed _packed) internal pure returns(${FIELD_TYPE} _${FIELD_NAME}) {
+    assembly {
+        ${LOAD_LOGIC}
+    }
+}

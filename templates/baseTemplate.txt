@@ -1,0 +1,30 @@
+// SPDX-License-Identifier: MIT
+// This file was procedurally generated
+
+pragma solidity ^0.8.20;
+
+using ${NAME}Library for ${NAME} global;
+using ${NAME}PackedLibrary for ${NAME}Packed global;
+
+${STRUCT}
+
+type ${NAME}Packed is uint256;
+
+library ${NAME}Library {
+  function store(${NAME} storage pointer, ${NAME}Packed _packed) internal {
+      assembly {
+          sstore(pointer.slot, _packed)
+      }
+  }
+  
+  function load(${NAME} storage pointer) internal view returns(${NAME}Packed _packed) {
+      assembly {
+          _packed := sload(pointer.slot)
+      }
+  }
+}
+
+library ${NAME}PackedLibrary {
+${LIBRARY_PACKED_GETTERS}
+${LIBRARY_PACKED_SETTERS}
+}
